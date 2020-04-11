@@ -66,3 +66,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+if(values.cart.length==0)
+{
+return(
+    <div className="container">
+    <div className="row mx-auto">
+        <div className="col-10 py-2 ">
+        <h1 style={
+            {textAlign: 'center'}
+        }>The cart is empty</h1>
+        </div>
+    </div>
+    </div>
+)
+}
+else
+{
+return(
+                
+)
+}
