@@ -3,6 +3,7 @@ import { ProductConsumer } from "../context";
 import Item from "./Item";
 import Title from "./Title";
 import {ButtonContainerCart} from './Button'
+import PaypalButton from './PaypalButton'
 export default class Cart extends Component {
   render() {
     return (
@@ -57,6 +58,7 @@ export default class Cart extends Component {
                       <h3>Subtotals : $ {values.subtotal.toFixed(2)}</h3>
                       <h3>Tax : $ {values.tax.toFixed(2)}</h3>
                       <h3>Total: $ {values.total.toFixed(2)}</h3>
+                      <PaypalButton total={values.total} clearCart={values.setProducts} history={this.props.history} />
                     </div>
                   </div>
                 </div>
